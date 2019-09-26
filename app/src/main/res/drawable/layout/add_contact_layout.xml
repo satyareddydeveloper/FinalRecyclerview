@@ -1,0 +1,167 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@drawable/new_login_gradients"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".AddUserDetailsActivity">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/edt_emp_id"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Employee Name"
+                    android:textColorHint="#ffffff"
+                    android:drawableLeft="@drawable/ic_person_white_24dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edt_emp_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_white_24dp"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Enter User Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColorHint="#ffffff" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/edt_emp_email"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Enter Email"
+                    android:textColorHint="#ffffff"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_person_white_24dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/edt_emp_mobile"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Enter Mob No"
+                    android:textColorHint="#ffffff"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_person_white_24dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select DepartMent">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+                <Spinner
+                    android:entries="@array/departments"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/departmentsspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp" />>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/ftv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Role">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    />
+
+
+                <Spinner
+                    android:entries="@array/role"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/rolespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

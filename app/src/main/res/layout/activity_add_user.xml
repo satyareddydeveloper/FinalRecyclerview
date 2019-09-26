@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Employee">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/edtempid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter User Id" />
+
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Employee Name"
+                />
+
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Employee Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Employee Mobile"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="6dp"
+                android:text="Select Department" />
+
+            <Spinner
+                android:id="@+id/spinnerDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/departments" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="6dp"
+                android:text="Select Role" />
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Role" />
+
+
+
+            <Button
+                android:layout_marginTop="55dp"
+                android:id="@+id/buttonAddEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Employee" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
